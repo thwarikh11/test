@@ -27,7 +27,8 @@ async def progress_for_pyrogram(
     total,
     ud_type,
     message,
-    start
+    start,
+    update
 ):
     now = time.time()
     diff = now - start
