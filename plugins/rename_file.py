@@ -43,7 +43,7 @@ async def rename_doc(bot, update):
         )
         return
     try:
-        await bot.get_chat_member('@groupname',update.chat.id)
+        await bot.get_chat_member('@KL_PROJECTS',update.chat.id)
     except:
         await bot.send_message(
             text= "Sorry you must subscribe My updates Channel",
