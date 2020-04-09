@@ -60,7 +60,8 @@ async def rename_doc(bot, update):
             progress_args=(
                 Translation.DOWNLOAD_START,
                 a,
-                c_time
+                c_time,
+                update
             )
         )
         await bot.delete_messages(
@@ -109,7 +110,8 @@ async def rename_doc(bot, update):
                 progress_args=(
                     Translation.UPLOAD_START,
                     a, 
-                    c_time
+                    c_time,
+                    update
                 )
             )
             try:
